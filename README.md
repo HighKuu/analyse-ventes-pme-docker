@@ -14,7 +14,7 @@ Le projet utilise Docker avec deux conteneurs :
 
 Les deux communiquent via un volume partagé, ce qui permet de séparer la logique métier du stockage des données.
 
-![Architecture](Schéma Architecture.png)
+![Architecture](Schema_Architecture.png)
 
 ## Installation et lancement
 
@@ -57,7 +57,7 @@ Le système calcule trois indicateurs principaux :
 - Lyon : 21 ventes
 - Paris : 20 ventes
 
-![Résultats](Résultat script python.png)
+![Résultats](Resultat_script_python.png)
 
 ## Technologies utilisées
 
