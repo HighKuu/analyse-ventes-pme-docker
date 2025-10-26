@@ -1,0 +1,22 @@
+version: '3.8'
+
+services:
+  # Service 1 : Base de données SQLite
+  db-sqlite:
+    image: nouchka/sqlite3:latest
+    container_name: sqlite-db
+    volumes:
+      - ./data:/data
+    stdin_open: true
+    tty: true
+    
+  # Service 2 : Application Python
+  app-python:
+    build: .
+    container_name: python-app
+    depends_on:
+      - db-sqlite
+    volumes:
+      - ./data:/data
+    stdin_open: true
+    tty: true

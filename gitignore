@@ -1,0 +1,9 @@
+# Base de données
+*.db
+*.sqlite
+data/
+
+# Python
+__pycache__/
+*.pyc
+.DS_Store
